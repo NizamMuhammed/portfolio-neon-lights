@@ -81,6 +81,7 @@ body {
 }
 
 /* Section - Home*/
+
 section {
   min-height: 100vh;
   padding: 14rem 12%;
@@ -207,6 +208,7 @@ span {
 }
 
 /* Home - Typing Animation */
+
 .text-animation {
   font-size: 34px;
   font-weight: 600;
@@ -287,4 +289,44 @@ span {
   85% {
     width: calc(100% + 8px);
   }
+}
+
+/* Section - Experience*/
+
+.heading {
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.experience {
+  background-color: var(--second-background-color);
+  padding: 100px 15px;
+}
+
+.experience h2 {
+  margin-bottom: 5rem;
+}
+
+.timeline-items {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1200px;
+}
+
+.timeline-items::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--main-color);
+  left: calc(50% - 1px);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
 }
